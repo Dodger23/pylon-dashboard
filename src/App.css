@@ -5,6 +5,7 @@
   --main-text: #151a28;
   --background: #F5F7FB;
   --shadow:  rgba(0, 0, 0, 0.16) -1px 10px 12px;
+  --border-radius: 10px
 }
 
 body {
@@ -33,6 +34,10 @@ ul {
   margin: 0;
 }
 
+
+.arabic {
+    font-family: 'Almarai';
+}
 /* ------------------ */
 
 nav {
@@ -73,9 +78,61 @@ nav .nav-logo {
     width: 20%;
 }
 .sidebar {
+    height: 100%;
     padding: 20px;
     background-color: var(--primary);
     text-align: center;
+}
+
+.sidebar h2 {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.pages {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pages a {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 7%;
+}
+
+.pages .page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    color: var(--second-text);
+    
+}
+
+.page:hover {
+    color: var(--main-text);
+    font-weight: bold;
+}
+
+.pages .active-page {
+    color: var(--main-text);
+    font-weight: bold;
+}
+
+.page svg {
+    width: 30%;
+}
+
+.page p {
+    width: 70%;
+    text-align: center;
+    margin: 0;
 }
 
 

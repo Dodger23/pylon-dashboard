@@ -1,10 +1,12 @@
 import React from 'react';
 import Malfunctions from './Malfunctions'
+import MonthlyReadings from './MonthlyReadings';
 function Home() {
     return (
-        
-            <Malfunctions></Malfunctions>
-        
+        <div className='main-content'>
+            <Malfunctions />
+            <MonthlyReadings />
+        </div>
     );
 }
 

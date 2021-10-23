@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Malfunctions from "./components/Malfunctions";
+import MonthlyReadings from "./components/MonthlyReadings";
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
           <Route path='/malfunctions'>
             <div className="layout-container">
               <Sidebar current='malfunctions'/>
-              <Malfunctions />
+              <div className='main-content'>
+                <Malfunctions />
+              </div>
             </div>
           </Route>
           
@@ -42,7 +45,9 @@ function App() {
           <Route path='/monthly-readings'>
             <div className="layout-container">
               <Sidebar current='monthly-readings'/>
-              <div></div>
+              <div className='main-content'>
+                <MonthlyReadings />
+              </div>
             </div>
           </Route>
           

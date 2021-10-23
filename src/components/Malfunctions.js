@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { ResponsiveBar } from "@nivo/bar";
 import { useState, useEffect } from "react";
+
 function Malfunctions() {
   const [malfunctionsData, setMalfunctionsData] = useState([]);
   const [sortBy, setSortBy] = useState("month");
@@ -132,7 +133,6 @@ function Malfunctions() {
   };
 
   return (
-    <div className="main-content">
       <div className="malfunctions-container ">
         <div className="malfunctions-stats-container">
           <div className="malfunctions-stat">
@@ -295,7 +295,6 @@ function Malfunctions() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

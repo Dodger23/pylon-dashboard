@@ -73,5 +73,71 @@
             }
         }
         
+    ],
+    "monthly-readings": [
+        { 
+          "id": "01/01/2021",
+          "values": {
+              "accepted": 5000,
+              "not accepted": 1000
+          }
+        },
+        { 
+          "id": "02/01/2021",
+          "values": {
+            "accepted": 6000,
+            "not accepted": 700 
+          }
+        },
+        { 
+          "id": "03/01/2021",
+          "values": {
+            "accepted": 7000,
+            "not accepted": 5000 
+          }
+        },
+        { 
+            "id": "04/01/2021",
+            "values": {
+                "accepted": 8000,
+              "not accepted": 3000 
+            }
+        },
+        { 
+            "id": "05/01/2021",
+            "values": {
+                "accepted": 9000,
+              "not accepted": 700
+            }
+        },
+        { 
+            "id": "06/01/2021",
+            "values": {
+                "accepted": 10000,
+                "not accepted": 700 
+            }
+        },
+        { 
+            "id": "07/01/2021",
+            "values": {
+                "accepted": 15000,
+                "not accepted": 700 
+            }
+        },
+        { 
+            "id": "08/01/2021",
+            "values": {
+                "accepted": 12000,
+                "not accepted": 700 
+            }
+        },
+        { 
+            "id": "09/01/2021",
+            "values": {
+                "accepted": 11000,
+                "not accepted": 700 
+            }
+        }
+        
     ]
   }

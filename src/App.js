@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import Malfunctions from "./components/Malfunctions";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path='/malfunctions'>
             <div className="layout-container">
               <Sidebar current='malfunctions'/>
-              <div></div>
+              <Malfunctions />
             </div>
           </Route>
           

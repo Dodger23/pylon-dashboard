@@ -1,9 +1,10 @@
 import React from 'react';
+import Malfunctions from './Malfunctions'
 function Home() {
     return (
-        <div className='home-container'>
-            <h1>Home</h1>
-        </div>
+        
+            <Malfunctions></Malfunctions>
+        
     );
 }
 

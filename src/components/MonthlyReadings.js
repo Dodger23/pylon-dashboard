@@ -136,14 +136,14 @@ function MonthlyReadings() {
         })
         return [
             {
-                "id": "not accepted",
+                "id": "مشكوك فيه",
                 "label": "مشكوك فيه",
-                "value": notAccepted,
+                "value": (notAccepted /(notAccepted + accepted) *100 ).toFixed(2),
             },
             {
-                "id": "accepted",
+                "id": "مقبول",
                 "label": "مقبول",
-                "value": accepted,
+                "value": (accepted / (notAccepted +accepted) *100).toFixed(2),
             }
         ]
     }
@@ -208,7 +208,7 @@ function MonthlyReadings() {
                             tickRotation: 0,
                             legend: 'العدد',
                             legendPosition: 'middle',
-                            legendOffset: -60
+                            legendOffset: -60,
                         }}
                         labelSkipWidth={12}
                         labelSkipHeight={12}

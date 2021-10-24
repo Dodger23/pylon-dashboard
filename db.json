@@ -139,5 +139,15 @@
             }
         }
         
+    ],
+    "water-contracts": [
+        {
+            "id": "08/01/2021",
+            "values": {
+                "good": 100,
+                "not good": 200,
+                "done": 300
+            }
+        }
     ]
   }

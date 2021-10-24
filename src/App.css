@@ -103,9 +103,9 @@ nav .nav-logo {
 }
 
 .pages {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto repeat(5, auto) 1fr;
+    row-gap: 1%;
     
 }
 
@@ -374,3 +374,28 @@ nav .nav-logo {
         width: 100% !important;
     }
 }
+
+
+/* ------------------------- */
+
+.water-contracts-container {
+    width: 30%;
+    height: 500px;
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.water-contracts-chart-container {
+    width: 100%;
+    height: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .water-contracts-container {
+        width: 100%;
+    }
+}
+

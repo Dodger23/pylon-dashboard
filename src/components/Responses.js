@@ -47,15 +47,22 @@ function Responses() {
             </div>
             <div className='responses-chart-container'>
                 <div className='table'>
-                    <div className='table-head'>
-                        <p className='arabic'>العدد</p>
-                        <p className='arabic'>الرد</p>
-                    </div>
                     {
+                        
                         data.map(item => {
+                            let barWidth = (item.value / data[0].value *100).toFixed(0) + "%";
+                            console.log(barWidth)
                             return <div className='table-row' key={item.id}>
-                                <p>{item.value}</p>
-                                <p className='arabic'>{item.id}</p>
+                                <div className='response-title-container'>
+                                   <p className='arabic'>{item.id}</p>
+                                </div>
+                                <div className='response-bar-container'>
+                                    <div className='response-bar' style={{width: barWidth}}>
+                                        <p className='response-bar-value'>
+                                            {item.value}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         })
                     }

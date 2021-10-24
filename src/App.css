@@ -433,28 +433,26 @@ nav .nav-logo {
 /* ----------------- */
 
 .table {
-    height: 500px;
+    height: 365px;
     overflow: scroll;
 }
-.table-head {
-    font-weight: bold;
-    font-size: larger;
-    border-bottom: 1px solid var(--main-text);
-}
-.table-head, .table-row {
+
+.table-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 150px 1fr;
+    column-gap: 2%;
     padding: 10px;
     text-align: center;
     color: var(--main-text);
 }
 
-.table-row {
-    border-bottom: 1px dashed var(--main-text);
+
+.response-bar {
+    background-color: rgb(0, 140, 255);
+    padding: 10px;
 }
 
-.table-row:hover {
-    background-color: var(--secondary);
+.response-bar-value {
     color: var(--primary);
     font-weight: bold;
 }

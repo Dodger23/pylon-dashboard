@@ -53,7 +53,7 @@ function WaterConstracts() {
             <div className='water-contracts-chart-container'>
             <ResponsivePie
                     data={getPieData(initialData)}
-                    margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+                    margin={{ top: 40, right: 80, bottom: 80, left: 100 }}
                     innerRadius={0.6}
                     padAngle={0.7}
                     valueFormat={'>-.2%'}

@@ -138,12 +138,12 @@ function MonthlyReadings() {
             {
                 "id": "مشكوك فيه",
                 "label": "مشكوك فيه",
-                "value": (notAccepted /(notAccepted + accepted) *100 ).toFixed(2),
+                "value": (notAccepted /(notAccepted + accepted) ).toFixed(2),
             },
             {
                 "id": "مقبول",
                 "label": "مقبول",
-                "value": (accepted / (notAccepted +accepted) *100).toFixed(2),
+                "value": (accepted / (notAccepted +accepted)).toFixed(2),
             }
         ]
     }
@@ -245,9 +245,10 @@ function MonthlyReadings() {
                     <ResponsivePie
                     data={getPieData(initialData)}
                     margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-                    innerRadius={0.5}
+                    innerRadius={0.6}
                     padAngle={0.7}
                     cornerRadius={3}
+                    valueFormat={'>-.2%'}
                     colors={["#ff6e6e", "#6ea7ff"]}
                     activeOuterRadiusOffset={8}
                     borderWidth={1}

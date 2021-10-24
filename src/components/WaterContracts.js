@@ -17,7 +17,7 @@ function WaterConstracts() {
         let good = 0
         let done =0  
         const getPercentage= (...nums) => {
-            return (nums[0] / ( nums[0]+ nums[1] + nums[2] ) *100 ).toFixed(2)
+            return (nums[0] / ( nums[0]+ nums[1] + nums[2] )  ).toFixed(2)
         }
         data.forEach(record => {
             notGood+= record.values['not good'];
@@ -54,8 +54,9 @@ function WaterConstracts() {
             <ResponsivePie
                     data={getPieData(initialData)}
                     margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-                    innerRadius={0.5}
+                    innerRadius={0.6}
                     padAngle={0.7}
+                    valueFormat={'>-.2%'}
                     cornerRadius={3}
                     colors={["#3CAEA3", "#F6D55C", "#ED553B", "#FA897B", "#CCABD8"]}
                     activeOuterRadiusOffset={8}

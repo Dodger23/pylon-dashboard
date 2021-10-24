@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Malfunctions from "./components/Malfunctions";
 import MonthlyReadings from "./components/MonthlyReadings";
+import WaterConstracts from "./components/WaterContracts";
+import Responses from "./components/Responses";
 
 function App() {
   return (
@@ -17,13 +19,17 @@ function App() {
               <Sidebar current='home'/>
               <Home />
             </div>
+            <footer>Tarek Hassan</footer>
           </Route>
           
           <Route path='/water-contracts'>
             <div className="layout-container">
               <Sidebar current='water-contracts'/>
-              <div></div>
+              <div className='main-content'>
+                  <WaterConstracts />
+              </div>
             </div>
+            <footer>Tarek Hassan</footer>
           </Route>
           
           <Route path='/malfunctions'>
@@ -33,13 +39,19 @@ function App() {
                 <Malfunctions />
               </div>
             </div>
+            <footer>Tarek Hassan</footer>
           </Route>
           
           <Route path='/responses'>
             <div className="layout-container">
               <Sidebar current='responses'/>
-              <div></div>
+              <div className='main-content'>
+                <div style={{height: '100%'}}>
+                  <Responses />
+                </div>
+              </div>
             </div>
+            <footer>Tarek Hassan</footer>
           </Route>
           
           <Route path='/monthly-readings'>
@@ -49,6 +61,7 @@ function App() {
                 <MonthlyReadings />
               </div>
             </div>
+            <footer>Tarek Hassan</footer>
           </Route>
           
         </Switch>

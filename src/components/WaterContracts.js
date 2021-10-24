@@ -7,7 +7,7 @@ function WaterConstracts() {
     const [initialData, setInitialData] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3004/water-contracts")
+        fetch("https://my-json-server.typicode.com/Dodger23/pylon-json-placeholder/water-contracts")
           .then((res) => res.json())
           .then((data) => setInitialData(data));
       }, []);

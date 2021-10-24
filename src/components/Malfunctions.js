@@ -113,7 +113,7 @@ function Malfunctions() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3004/malfunctions")
+    fetch("https://my-json-server.typicode.com/Dodger23/pylon-json-placeholder/malfunctions")
       .then((res) => res.json())
       .then((data) => setMalfunctionsData(data));
   }, []);

@@ -15,7 +15,7 @@ function MonthlyReadings() {
         legendOffset: 50,
       });
     useEffect(() => {
-        fetch("http://localhost:3004/monthly-readings")
+        fetch("https://my-json-server.typicode.com/Dodger23/pylon-json-placeholder/monthly-readings")
           .then((res) => res.json())
           .then((data) => setInitialData(data));
       }, []);

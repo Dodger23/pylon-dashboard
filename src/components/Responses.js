@@ -7,7 +7,7 @@ function Responses() {
     const [searchValue, setSearchValue] = useState('')
 
     useEffect(() => {
-        fetch("http://localhost:3004/responses")
+        fetch("https://my-json-server.typicode.com/Dodger23/pylon-json-placeholder/responses")
           .then((res) => res.json())
           .then((data) => {setInitialData(sortData(data));  setData(sortData(data)); return data});
           // eslint 

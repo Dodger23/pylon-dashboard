@@ -7,6 +7,7 @@ import Malfunctions from "./components/Malfunctions";
 import MonthlyReadings from "./components/MonthlyReadings";
 import WaterConstracts from "./components/WaterContracts";
 import Responses from "./components/Responses";
+import ConnectedMeters from "./components/ConnectedMeters";
 
 function App() {
   return (
@@ -59,6 +60,16 @@ function App() {
               <Sidebar current='monthly-readings'/>
               <div className='main-content'>
                 <MonthlyReadings />
+              </div>
+            </div>
+            <footer>Tarek Hassan</footer>
+          </Route>
+          
+          <Route path='/connected-meters'>
+            <div className="layout-container">
+              <Sidebar current='connected-meters'/>
+              <div className='main-content'>
+                <ConnectedMeters />
               </div>
             </div>
             <footer>Tarek Hassan</footer>

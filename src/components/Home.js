@@ -1,4 +1,5 @@
 import React from 'react';
+import ConnectedMeters from './ConnectedMeters';
 import Malfunctions from './Malfunctions'
 import MonthlyReadings from './MonthlyReadings';
 import Responses from './Responses';
@@ -12,6 +13,7 @@ function Home() {
                 <WaterConstracts />
                 <Responses />
             </div>
+            <ConnectedMeters />
         </div>
     );
 }

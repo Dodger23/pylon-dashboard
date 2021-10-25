@@ -5,6 +5,7 @@ import {
   FaWrench,
   FaReplyAll,
   FaFileAlt,
+  FaCubes
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Sidebar(props) {
@@ -57,6 +58,16 @@ function Sidebar(props) {
             >
               <FaFileAlt />
               <p className="arabic">القراءات الشهرية</p>
+            </div>
+          </Link>
+          <Link to="/connected-meters">
+            <div
+              className={
+                current === "connected-meters" ? "page active-page" : "page"
+              }
+            >
+              <FaCubes />
+              <p className="arabic">العدادات المتصلة</p>
             </div>
           </Link>
         </div>
